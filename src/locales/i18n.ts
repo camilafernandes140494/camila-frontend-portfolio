@@ -14,8 +14,24 @@ i18n
       escapeValue: false, // React já faz a proteção contra XSS
     },
     backend: {
-      loadPath: "./i18n.ts",
+      loadPath: "/src/locales/{{lng}}.json",
     },
+    // resources: {
+    //   en: {
+    //     translation: {
+    //       welcome: "Welcome to the application!",
+    //       how_are_you: "How are you?",
+    //       my_profile: "My profile",
+    //     },
+    //   },
+    //   pt: {
+    //     translation: {
+    //       welcome: "Bem-vindo ao aplicativo!",
+    //       how_are_you: "Como você está?",
+    //       my_profile: "Meu perfil",
+    //     },
+    //   },
+    // },
   });
 
 export default i18n;
