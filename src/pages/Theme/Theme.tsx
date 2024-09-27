@@ -18,7 +18,9 @@ export const lightTheme = createTheme({
         warning: {
             main: '#EFC3E6',
         },
-
+    },
+    typography: {
+        fontFamily: 'Playwrite DE Grund, sans-serif',
     },
 });
 
@@ -35,10 +37,13 @@ export const darkTheme = createTheme({
             default: '#2D2D34',  // Cor de fundo
         },
         info: {
-            main: '#E2DCDE'
+            main: '#9c9c9c'
         },
         warning: {
             main: '#F1E4E8',
         },
+    },
+    typography: {
+        fontFamily: 'Playwrite DE Grund, sans-serif',
     },
 });
