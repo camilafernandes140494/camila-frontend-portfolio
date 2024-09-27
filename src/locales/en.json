@@ -1,8 +1,11 @@
 {
-  "hello": "Hello, I'm Camila Fernandes",
-  "frontend_developer": "Front-End Developer",
-  "portuguese": "Portuguese",
+  "about_me": "About me",
+  "about_me_description": "Front-end developer with experience in React.js, Next.js, JavaScript, TypeScript, Styled Components, Material UI and consumption of REST APIs. Passionate about developing reusable components. Also has experience in projects managed by Agile Methodologies. Graduated in computer engineering and studying IT project management and agile methodologies.",
+  "contact": "Contact",
+  "download_cv": "Download CV",
   "english": "English",
+  "frontend_developer": "Front-End Developer",
+  "hello": "Hello, I'm Camila Fernandes",
   "portfolio": "Portfolio",
-  "download_cv": "Download CV"
+  "portuguese": "Portuguese"
 }

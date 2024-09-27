@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "steoates.autoimport", // Auto Import
+    "esbenp.prettier-vscode", // Prettier - Code formatter
+    "dbaeumer.vscode-eslint", // ESLint
+    "richie5um2.vscode-sort-json", // Sort JSON Objects
+    "IronGeek.vscode-env", // ENV
+    "dsznajder.es7-react-js-snippets", // ES7+ React/Redux/React-Native snippets
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "eamodio.gitlens", // GitLens
+    "paulmolluzzo.convert-css-in-js" // CSS-in-JS
+  ],
+  "unwantedRecommendations": []
+}
