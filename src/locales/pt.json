@@ -1,5 +1,8 @@
 {
   "hello": "Olá, eu sou a Camila Fernandes",
+  "frontend_developer": "Desenvolvedora Front-End",
   "portuguese": "Português",
-  "english": "Inglês"
+  "english": "Inglês",
+  "portfolio": "Portifólio",
+  "download_cv": "Download CV"
 }
