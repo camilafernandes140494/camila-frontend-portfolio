@@ -7,11 +7,9 @@ function App() {
   return (
     <>
       <CustomThemeProvider>
-        <Header
-        />
+        <Header />
         <Home />
       </CustomThemeProvider>
-
     </>
   )
 }
