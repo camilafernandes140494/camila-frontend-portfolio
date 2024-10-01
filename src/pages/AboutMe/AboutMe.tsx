@@ -19,9 +19,9 @@ export const AboutMe = () => {
     <Box
       sx={{
         display: "flex",
-        padding: "10rem",
+        padding: { xs: "2rem", md: "10rem" },
         flexDirection: "column",
-        gap: "10rem",
+        gap: { xs: "2rem", md: "10rem" },
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
@@ -30,9 +30,11 @@ export const AboutMe = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column-reverse", md: "row" },
           justifyContent: "space-between",
+          alignItems: "center",
           width: "100%",
+          gap: "1rem",
         }}
       >
         <Box
@@ -55,7 +57,7 @@ export const AboutMe = () => {
           </Button>
         </Box>
 
-        <Avatar sx={{ width: 156, height: 156 }}>CF</Avatar>
+        <Avatar sx={{ width: "10rem", height: "10rem" }}>CF</Avatar>
       </Box>
 
       <Box
