@@ -1,5 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
-import { Avatar, Box, Button, IconButton, Typography } from "@mui/material";
+import { Avatar, Box, Button, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export const AboutMe = () => {
@@ -45,6 +44,10 @@ export const AboutMe = () => {
           }}
         >
           <Typography variant="h4">{t("hello")}</Typography>
+          <Typography variant="h2" sx={{ fontFamily: "Sacramento" }}>
+            {"Camila Fernandes"}
+          </Typography>
+
           <Typography variant="h5">{t("frontend_developer")}</Typography>
           <Button
             variant="contained"
@@ -74,39 +77,6 @@ export const AboutMe = () => {
         <Typography variant="body1" textAlign={"center"}>
           {t("about_me_description")}
         </Typography>
-        <Typography variant="h4" textAlign={"center"}>
-          {t("contact")}
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "1rem",
-            width: "100%",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <IconButton
-            color="secondary"
-            sx={{
-              border: "2px solid #A200FF", // Altere a cor para a que desejar
-              borderRadius: "8px",
-              transition: "0.3s", // Transição suave para o efeito neon
-              "&:hover": {
-                boxShadow: "0 0 10px #A200FF, 0 0 20px #A200FF",
-              },
-            }}
-          >
-            <Icon icon={"mdi:linkedin"} width="48" height="48" />
-          </IconButton>
-          <IconButton color="secondary">
-            <Icon icon={"mdi:github"} width="48" height="48" />
-          </IconButton>
-          <IconButton color="secondary">
-            <Icon icon={"mdi:linkedin"} width="48" height="48" />
-          </IconButton>
-        </Box>
       </Box>
     </Box>
   );
