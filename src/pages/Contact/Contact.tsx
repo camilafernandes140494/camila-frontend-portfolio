@@ -7,8 +7,15 @@ export const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Typography variant="h4" textAlign={"center"}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "2rem",
+        width: "100%",
+      }}
+    >
+      <Typography variant="h2" textAlign={"center"}>
         {t("contact")}
       </Typography>
 
@@ -87,6 +94,6 @@ export const Contact = () => {
           <Icon icon={"mdi:alternate-email"} width="3rem" height="3rem" />
         </IconButton>
       </Box>
-    </>
+    </Box>
   );
 };

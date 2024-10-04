@@ -15,17 +15,7 @@ export const AboutMe = () => {
   };
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        padding: { xs: "2rem", md: "10rem" },
-        flexDirection: "column",
-        gap: { xs: "2rem", md: "10rem" },
-        width: "100%",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <>
       <Box
         sx={{
           display: "flex",
@@ -78,6 +68,6 @@ export const AboutMe = () => {
           {t("about_me_description")}
         </Typography>
       </Box>
-    </Box>
+    </>
   );
 };

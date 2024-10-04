@@ -11,6 +11,7 @@ export const lightTheme = createTheme({
     },
     background: {
       default: "#F0E6EF", // Cor de fundo
+      paper: "#FFFFFF",
     },
     info: {
       main: "#B8BEDD",
@@ -35,6 +36,7 @@ export const darkTheme = createTheme({
     },
     background: {
       default: "#2D2D34", // Cor de fundo
+      paper: "#393942",
     },
     info: {
       main: "#9c9c9c",
