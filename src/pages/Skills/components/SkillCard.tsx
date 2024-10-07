@@ -5,17 +5,23 @@ import { useState } from "react";
 type SkillCardProps = {
   icon: string;
   skill: string;
+  ratingValue?: number;
 };
 
-export const SkillCard = ({ icon, skill }: SkillCardProps) => {
+export const SkillCard = ({
+  icon,
+  skill,
+  ratingValue = 2.5,
+}: SkillCardProps) => {
   const theme = useTheme();
-  const [hover, setHover] = useState(false); // Estado para controlar o hover
+  const [hover, setHover] = useState(false);
 
   return (
     <Card
       variant="outlined"
       sx={{
         padding: hover ? "1.5rem" : "1rem",
+        gap: "1rem",
         backgroundColor: theme.palette.background.paper,
         borderLeft: `10px solid ${theme.palette.primary.main}`,
         display: "flex",
@@ -42,7 +48,7 @@ export const SkillCard = ({ icon, skill }: SkillCardProps) => {
           overflow: "hidden",
         }}
       >
-        <Rating defaultValue={5} precision={0.5} readOnly />
+        <Rating defaultValue={ratingValue} precision={0.5} readOnly />
       </Box>
     </Card>
   );
