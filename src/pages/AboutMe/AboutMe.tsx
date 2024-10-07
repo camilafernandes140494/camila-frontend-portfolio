@@ -103,7 +103,7 @@ export const AboutMe = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: "1rem",
+          gap: "2rem",
           maxWidth: "50rem",
         }}
       >

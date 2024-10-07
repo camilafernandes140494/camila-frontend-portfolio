@@ -10,7 +10,7 @@ export const Skills = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "1rem",
+        gap: "2rem",
       }}
     >
       <Typography variant="h2" textAlign={"center"}>
