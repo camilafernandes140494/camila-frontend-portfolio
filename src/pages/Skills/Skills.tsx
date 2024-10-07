@@ -23,6 +23,7 @@ export const Skills = () => {
           alignItems: "center",
           gap: "3rem",
           flexWrap: "wrap",
+          justifyContent: "center",
         }}
       >
         <SkillCard
