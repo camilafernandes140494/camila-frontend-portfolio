@@ -38,11 +38,11 @@ const handleCloseSnackbar = () => {
       )
       .then(
         () => {
-        setSnackbar({ open: true, message: "Mensagem enviada com sucesso!", severity: "success" });
+        setSnackbar({ open: true, message: t("message_sent_successfully"), severity: "success" });
           setForm({ name: "", email: "", message: "" });
         },
         () => {
-        setSnackbar({ open: true, message: "Erro ao enviar a mensagem. Tente novamente.", severity: "error" });
+        setSnackbar({ open: true, message: t("error_sending_message"), severity: "error" });
         }
       );
   };

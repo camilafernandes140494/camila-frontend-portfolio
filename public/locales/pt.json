@@ -12,5 +12,7 @@
   "send_message": "Enviar mensagem",
   "name": "Nome",
   "message":" Mensagem",
-  "send": "Enviar"
+  "send": "Enviar",
+  "message_sent_successfully":"Mensagem enviada com sucesso!",
+  "error_sending_message":"Erro ao enviar a mensagem. Tente novamente."
 }
