@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import {  Alert, Button, Snackbar, TextField, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
+  
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const [snackbar, setSnackbar] = useState<{ open: boolean; message: string; severity: "success" | "error" }>({
@@ -46,10 +49,10 @@ const handleCloseSnackbar = () => {
 
   return (
     <>
-        <Typography variant="h5">Enviar mensagem</Typography>
+        <Typography variant="h5">{t("send_message")}</Typography>
 
          <TextField
-            label="Nome"
+            label={t("name")}
             name="name"
             type="name"
             value={form.name}
@@ -57,7 +60,7 @@ const handleCloseSnackbar = () => {
             fullWidth
         />
         <TextField
-            label="Email"
+            label="E-mail"
             name="email"
             type="email"
             value={form.email}
@@ -65,7 +68,7 @@ const handleCloseSnackbar = () => {
             fullWidth
         />
         <TextField
-            label="Mensagem"
+            label={t("message")}
             name="message"
             multiline
             rows={4}
@@ -74,7 +77,7 @@ const handleCloseSnackbar = () => {
             fullWidth
           />
         <Button variant="contained" color="primary" onClick={handleSubmit}>
-            Enviar
+            {t("send")}
           </Button>
           <Snackbar
             open={snackbar.open}

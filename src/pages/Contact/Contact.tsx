@@ -8,8 +8,10 @@ import {
   Modal,
 } from "@mui/material";
 import { ContactForm } from "./ContactForm";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 
@@ -17,7 +19,7 @@ export const Contact = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: "2rem", width: "100%" }}>
       <Typography variant="h2" textAlign={"center"}>
-        Contato
+         {t("contact")}
       </Typography>
 
       <Box sx={{ display: "flex", gap: "2rem", justifyContent: "center" }}>

@@ -8,5 +8,9 @@
   "hello": "Olá, eu sou a",
   "portfolio": "Portifólio",
   "portuguese": "Português",
-  "skills": "Habilidades"
+  "skills": "Habilidades",
+  "send_message": "Enviar mensagem",
+  "name": "Nome",
+  "message":" Mensagem",
+  "send": "Enviar"
 }

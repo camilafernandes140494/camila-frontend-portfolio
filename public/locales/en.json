@@ -8,5 +8,9 @@
   "hello": "Hello, I'm",
   "portfolio": "Portfolio",
   "portuguese": "Portuguese",
-  "skills": "Skills"
+  "skills": "Skills",
+  "send_message": "Send message",
+  "name": "Name",
+  "message":" Message",
+  "send": "Send"
 }
