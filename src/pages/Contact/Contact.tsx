@@ -1,34 +1,27 @@
+import { useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import {
+  Box,
+  IconButton,
+  Typography,
+  useTheme,
+  Modal,
+} from "@mui/material";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   const theme = useTheme();
-  const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "2rem",
-        width: "100%",
-      }}
-    >
+    <Box sx={{ display: "flex", flexDirection: "column", gap: "2rem", width: "100%" }}>
       <Typography variant="h2" textAlign={"center"}>
-        {t("contact")}
+        Contato
       </Typography>
 
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "2rem",
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <Box sx={{ display: "flex", gap: "2rem", justifyContent: "center" }}>
+        {/* LinkedIn */}
         <IconButton
           color="primary"
           component="a"
@@ -46,6 +39,8 @@ export const Contact = () => {
         >
           <Icon icon={"mdi:linkedin"} width="3rem" height="3rem" />
         </IconButton>
+
+        {/* Github */}
         <IconButton
           color="primary"
           component="a"
@@ -63,6 +58,8 @@ export const Contact = () => {
         >
           <Icon icon={"mdi:github"} width="3rem" height="3rem" />
         </IconButton>
+
+        {/* Whatsapp */}
         <IconButton
           color="primary"
           component="a"
@@ -80,8 +77,11 @@ export const Contact = () => {
         >
           <Icon icon={"mdi:whatsapp"} width="3rem" height="3rem" />
         </IconButton>
+
+        {/* Email - abre modal */}
         <IconButton
           color="primary"
+          onClick={() => setOpen(true)}
           sx={{
             border: `2px solid ${theme.palette.primary.main}`,
             borderRadius: "0.5rem",
@@ -94,6 +94,26 @@ export const Contact = () => {
           <Icon icon={"mdi:alternate-email"} width="3rem" height="3rem" />
         </IconButton>
       </Box>
+
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            bgcolor: theme.palette.background.paper,
+            p: 4,
+            borderRadius: 2,
+            display: "flex",
+            flexDirection: "column",
+            gap: 2,
+            width: { xs: "90%", sm: 400 },
+          }}
+        >
+          <ContactForm />
+        </Box>
+      </Modal>
     </Box>
   );
 };
